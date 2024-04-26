@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME-ANIMAX</title>
+    <link rel="stylesheet" href="css/pagina2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="mai">
+    <header class="header">
+        <div class="logo"><!--style= "width: 5%"-->
+
+            <div class="animacion"><img class="goku" src="img/goku2.png" alt=""></div>
+            <div class="sombra"></div>
+            <h3><a class="animax" href="indexportada.html">ANIME-ANIMAX</a></h3>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                <a class="navbar-brand" href="indexportada.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                    <a class="nav-link active" aria-current="page" href="index.html">Directorio</a>
+                    <a class="nav-link" href="anime.html">En emision</a>
+                    <a class="nav-link" href="anime.html">Destacados</a>
+                    <!--<form class="d-flex" role="search">
+
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Buscar</button>
+
+                    </form>-->
+
+                    
+                    <!-- Button trigger modal -->
+                    <a href="registro.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        id="btn"><!--id=registro-->
+                        Registro
+                    </button></a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Completar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form action method="get">
+                                        <div class="nombre"><label><input class="radio" type="text" name="nombre"
+                                                    placeholder="Nombre"></label></div>
+                                        <div class="apellido"><label><input class="radio" type="text" name="apellido"
+                                                    placeholder="Apellido"></label></div>
+                                        <div class="email"><label><input class="radio" type="email" name="email"
+                                                    placeholder="Email"></label></div>
+                                        <div class="contraseña"><label><input class="radio" type="password"
+                                                    name="contraseña" placeholder="Contraseña"></label></div>
+                                        <div class="fecha"><label><input class="radio" type="date" name="fecha"
+                                                    placeholder="dd/mm/aaaa"></label></div>
+                                        <div class="origen">
+                                            <select class="radio" name="pais" id="pais">
+                                                <option value="pais">País</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="BO">Bolivia</option>
+                                                <option value="BR">Brasil</option>
+                                                <option value="CH">Chile</option>
+                                                <option value="CO">Colombia</option>
+                                                <option value="EC">Ecuador</option>
+                                                <option value="PY">Paraguay</option>
+                                            </select>
+                                        </div>
+                                        <div class="terminos">
+                                            <input type="checkbox"><a class="terminos" href="indexportada.html">Acepto terminos y
+                                                condiciones.</a>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="indexportada.html"><button type="submit"
+                                            class="btn btn-light">Confirmar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" id="btn">
+                        Usuario
+                    </button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Ingrese usuario y contraseña
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="usuario">
+
+                                        <form action method="get">
+
+                                            <div class="email">
+                                                <label>
+                                                    <input class="radio" type="email" name="email" placeholder="Email">
+                                                </label>
+                                            </div>
+
+                                            <div class="contraseña">
+                                                <label>
+                                                    <input class="radio" type="password" name="contraseña"
+                                                        placeholder="Contraseña"><br>
+                                                    <a class="olvidar" href="indexportada.html">¿Olvidaste tu contraseña?</a>
+                                                </label>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="indexportada.html"><input class="btn btn-light" type="submit"
+                                            value="Ingresar"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+              <a class="nav-link" id="registro" href="registro.html">Registro</a>
+              <a class="nav-link" id="usuario" href="usuario.html">Usuario</a>-->
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </nav>
+<main>
+    
+    <div class="container">
+
+        <div class="item">
+
+          <picture>
+      
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Akuyaku Reijou Level 99 Watashi wa Ura-Boss desu ga Maou dewa Arimasen.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Akuyaku Reijou Level 99 Watashi wa Ura-Boss desu ga Maou dewa Arimasen</a></figcaption>
+      
+          </picture>
+
+        </div>
+        <div class="item">
+        
+            <picture>
+
+                <source srcset="" type="image/svg+xml">
+                <a href="anime.html"><img src="img/pagina2/Arknights Fuyukomori Kaerimichi.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+                <figcaption class="figure-caption"><a class="titulo" href="anime.html">Arknights Fuyukomori Kaerimichi</a></figcaption>
+
+            </picture>
+
+        </div>
+
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Boku no Kokoro no Yabai Yatsu.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Boku no Kokoro no Yabai Yatsu<!--Kouho no Mattari Isekai Life--></a>
+              </figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Dosanko Gal wa Namara Menkoi.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Dosanko Gal wa Namara Menkoi</a></figcaption>
+  
+          </picture>
+  
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Bungou Stray Dogs 4th Season.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Bungou Stray Dogs 4th Season</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Horimiya Piece.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Horimiya Piece</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Ishura.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Ishura</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Jaku-Chara Tomozaki-kun 2nd Stage.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Jaku-Chara Tomozaki-kun 2nd Stage</a></figcaption>
+  
+          </picture>
+  
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Jujutsu Kaisen 2nd Season.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Jujutsu Kaisen 2nd Season</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Karasu wa Aruji wo Erabanai.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Karasu wa Aruji wo Erabanai</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Konyaku Haki sareta Reijou wo Hirotta Ore ga, Ikenai Koto wo Oshiekomu.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Konyaku Haki sareta Reijou wo Hirotta Ore ga, Ikenai Koto wo Oshiekomu</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Kuroshitsuji Kishuku Gakkou-hen.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Kuroshitsuji Kishuku Gakkou-hen</a></figcaption>
+  
+          </picture>
+  
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Majutsushi Orphen Hagure Tabi Seiiki-hen.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Majutsushi Orphen Hagure Tabi Seiiki-hen</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Mononogatari.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Mononogatari</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Oroka na Tenshi wa Akuma to Odoru.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Oroka na Tenshi wa Akuma to Odoru</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Tate no Yuusha no Nariagari Season 3.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Tate no Yuusha no Nariagari Season 3</a></figcaption>
+  
+          </picture>
+  
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Temple.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Temple</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/The New Gate.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">The New Gate</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Urusei Yatsura (2022).jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Urusei Yatsura (2022)</a></figcaption>
+  
+          </picture>
+  
+        </div>
+        <div class="item">
+        
+          <picture>
+  
+              <source srcset="" type="image/svg+xml">
+              <a href="anime.html"><img src="img/pagina2/Yoru no Kurage wa Oyogenai.jpg" class="img-fluid img-thumbnail" alt="..."></a>
+              <figcaption class="figure-caption"><a class="titulo" href="anime.html">Yoru no Kurage wa Oyogenai</a></figcaption>
+  
+          </picture>
+  
+        </div>
+      </div>
+
+      <div class="pagina" role="group" aria-label="Second group">
+
+        <button type="button" class="btn btn-secondary" id="numeropagina"><a class="pagina" href="index.html">1</a></button>
+        <button type="button" class="btn btn-secondary" id="numeropagina"><a class="pagina" href="pagina2.html">2</a></button>
+        <button type="button" class="btn btn-secondary" id="numeropagina"><a class="pagina" href="pagina3.html">3</a></button>
+
+      </div>
+
+        
+
+    
+</main>
+<footer class="footer">
+    <nav class="navegacion">
+        <div class="grid-container2">
+            <ul class="listaNav">
+                <li class="listaItem">
+                    <a class="linkNav" href="indexportada.html">Términos y condiciones</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav" href="indexportada.html">Preguntas frecuentes</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav" href="indexportada.html">Ayuda</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav administradorPeliculas" href="indexportada.html">ANIME-ANIMAX | PICTURES</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

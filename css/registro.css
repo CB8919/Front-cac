@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .header {
+        height: initial;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        height: initial;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        height: initial;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .body {
+        height: initial;
+        
+    }
+}
+.body {
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/portada/demon-slayer-1657889450.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nombre, .apellido, .email, .contraseña, .fecha, .origen {
+    text-align: center;
+    padding: 1em;
+}
+h2 {
+    text-align: center;
+    position: relative;
+}
+.registro {
+    
+    margin-top: 3%;
+    margin-left: 30%;
+    width: 30em;
+    height: 35em;
+    /*border: 2px solid black;*/
+    border-radius: 2em;
+    /*background: linear-gradient(60deg,#20c997,#0d6efd );*/
+    border: 2px solid gainsboro;
+    
+}
+
+.radio {
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+}
+.terminos, .registro {
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+#reg {
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+}
+.mai{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+}

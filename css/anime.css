@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*, .contenedorDetalle, .imgDetalle, .Kaijuu, .textoDetalle, .trailer, .contenedorTrailer, .verTrailer*//*, .contenedorDetalle, .imgDetalle, .Kaijuu, .textoDetalle, .trailer, .contenedorTrailer, .verTrailer*/
+}
+
+#btn {
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+    font-weight: bold;
+    margin: .2rem;
+}
+.detalle {
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/kaijuno8-anime\ fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+}
+.contenedorDetalle{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    
+}
+.imgDetalle {
+    display: flex!important;
+    justify-content: space-evenly!important;
+    flex-flow: row wrap!important;
+}
+.Kaijuu {
+    border-radius: 20px ;
+    margin-top: 4rem;
+}
+.textoDetalle, .verTrailer {
+    color: white!important;
+}
+.trailer {
+    padding-top: 15px;
+    padding-bottom: 100px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 70px;
+}
+.contenedorTrailer{
+    width: 100%;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+.footer{
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listaNav, .listaItem, .linkNav{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.mainDetalle {
+    background: linear-gradient(60deg,#7caaef,#3be3b1);
+}
+.modal-body, .modal-content {
+    /*background: linear-gradient(60deg,#20c997,#0d6efd );*/
+    background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/Hananoi-kun\ to\ Koi\ no\ Yamai.jpg);
+    
+}
+.terminos, .registro, .modal-title {
+    /*padding: 1em;*/
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+.radio {
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+}
+.olvidar {
+    text-decoration: none;
+    color: aliceblue;
+}
+.nombre, .apellido, .email, .contraseña, .fecha, .origen {
+    text-align: center;
+    padding: 1em;
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .detalle {
+            .contenedorDetalle {
+                flex-direction: column;
+                row-gap: 20px;
+                img {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .detalle {
+            & .contenedorDetalle {
+                & .textoDetalle {
+                    h1 {
+                        font-size: 1rem;
+                    } h2 {
+                        font-size: .1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .detalle {
+            & .contenedorDetalle {
+                & .textoDetalle {
+                    .contenedorCreditos {
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .trailer {
+            .contenedorTrailer {
+                width: 100%;
+            }
+        }
+    }
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .trailer {
+            & .contenedorTrailer {
+                h2 {
+                    margin-top: 370px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        & .trailer {
+            & .contenedorTrailer {
+                iframe {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+@media (max-width: 768px) {
+    .footer {
+        .listaNav {
+            flex-direction: column;
+            row-gap: -5px;
+        }
+    }
+}
+.footer {
+    .listaNav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+}

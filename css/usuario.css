@@ -1,0 +1,36 @@
+
+.usuario {
+    
+    position: relative;
+    top: 10em;
+    left: 28em;
+    right: 28em;
+    bottom: 10em;
+    width: 30em;
+    height: 16em;
+    border-radius: 2em;
+    background: linear-gradient(60deg,#20c997,#0d6efd );
+    text-align: center;
+}
+.email {
+    position: relative;
+    top: 2em;
+}
+.contraseña {
+    position: relative;
+    top: 4em;
+}
+.registrarse {
+    position: relative;
+    top: 5em;
+}
+.radio {
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+}
+.olvidar {
+    text-decoration: none;
+    color: aliceblue;
+}
+

@@ -1,0 +1,195 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .header {
+        height: initial;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .mainDetalle {
+        height: initial;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        height: initial;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}
+.header {
+    /*background-color:#0dcaf0;*/
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+}
+.navbar-brand {
+    color: black!important;
+}
+.animax {
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    text-decoration: none;
+    /*color: #615050;*/
+    color: white;
+}
+.goku {
+    width: 5%;
+}
+@media screen and (max-width: 400px) {
+ .goku, .sombra {
+    width: 17%;
+ }   
+}
+@media screen and (max-width: 1300px) {
+    .goku, .sombra {
+       width: 17%;
+    }   
+}
+.animacion{
+    animation: animar 1s infinite alternate
+    
+}
+@keyframes animar{
+    to{
+        transform: translatey(20px)
+    }
+}
+.sombra{
+    height: 1em;
+    width: 3em;
+    background: #333;
+    border-radius: 50%;
+    margin-left: 9px ;
+    margin-top: 15px;
+    transform: rotateX(-50deg);
+    animation: sombra 1s infinite alternate;
+}
+@keyframes sombra{
+    to{
+        transform: scale(0.6) rotateX(-30deg);
+    }
+}
+main {
+    /*background-color: #0d6efd;/*#2b08086d;*/
+    background: linear-gradient(60deg,#0d6efd,#20c997 );
+}
+.container {
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    /*margin-top: 5%;*/
+    
+}
+.item {
+    width: 15%;
+}
+.grid-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    border: 4px solid black;
+}
+.grid-item {
+    width: 15%;
+}
+.figure-caption, .pagina {
+    text-decoration: none;
+    color: /*black*/white;
+    font-style: initial;
+    font-weight: bold;
+    text-align: center;
+}
+#registro, #usuario {
+    font-weight: bold;
+    color: #20c997;
+    position: relative;
+    left: 34em;
+}
+.nombre, .apellido, .email, .contraseña, .fecha, .origen {
+    text-align: center;
+    padding: 1em;
+}
+.radio {
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+}
+.terminos, .registro, .modal-title {
+    /*padding: 1em;*/
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+.modal-body, .modal-content {
+    /*background: linear-gradient(60deg,#20c997,#0d6efd );*/
+    background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/Hananoi-kun\ to\ Koi\ no\ Yamai.jpg);
+    
+}
+#btn {
+    /*background: linear-gradient(60deg,#0d6efd,#20c997);
+    font-weight: bold;
+    position: relative;
+    left: 32em;
+    margin: .2rem;*/
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+    font-weight: bold;
+    margin: .2rem;
+    
+}
+.olvidar {
+    text-decoration: none;
+    color: aliceblue;
+}
+.portada {
+    /*background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/portada/Portada.jpg);
+    background-size: cover;
+    background-position: center;*/
+    color: white;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/portada/Portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titulo {
+    font-size: 5rem;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    position: absolute;
+    top: 20rem;
+}
+#ingresar {
+    height: 4rem;
+    width: 8rem;
+    background: linear-gradient(60deg,#648016,#22262c );
+}
+.footer{
+    background: linear-gradient(60deg,#0d6efd,#20c997);
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listaNav, .listaItem, .linkNav{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.mai{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+}
